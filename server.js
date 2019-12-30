@@ -34,7 +34,7 @@ app.get('/books', (req, res) => {
 
 
 app.get('*', (req,res) => {
-    res.status(404).send('Not Found');
+    res.status(404).send('Error 404 Not Found');
 });
 app.listen(PORT, ()=> {
     console.log('Working!!!!!!!');
