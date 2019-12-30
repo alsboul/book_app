@@ -17,7 +17,7 @@ app.use(express.static('./pages'));
 app.use('/public' , express.static('public'));
 
 
-app.get('/hello', (req,res) => {
+app.get('/search', (req,res) => {
     res.render('../views/pages/index');
 });
 
