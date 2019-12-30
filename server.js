@@ -26,6 +26,7 @@ app.get('/searches', (req, res) => {
     const url = `https://www.googleapis.com/books/v1/volumes?q=tokoy`;
     superagent.get(url)
     .then( data => {
+        console.log(data.body.items);
         res.render('show',{'show': data.body.items})
         
     });
